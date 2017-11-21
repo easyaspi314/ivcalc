@@ -19,10 +19,10 @@ The latest version of this program can always be found at https://legendarypkmn.
 <meta name="keywords" content="Pokemon, IVs, IV, Calculator, Individual, Values, Stats, Stat, Hidden Power" />
 <meta name="description" content="This IV Calculator / Stat Calculator / Hidden Power Calculator aims to help Pokémon Trainers calculate the attributes of their Pokémon." />
 <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFFJREFUOMu1kjEOACAIA/ng/f87Lo4WimgTo4M9G0vEWexlCbG3hDiPE5A81E5DcVeaEJ9KBcAAxFdABsFtBSOJVV0KYAq46Zuno2xNl2tsmxeYhhbdfJzuqAAAAABJRU5ErkJggg==" />
-<link rel="stylesheet" href="style.min.css"/>
+<link rel="stylesheet" href="style.css"/>
 <body>
 <div id="calculator"> <!-- Start here if you want to include this in your page -->
-<script async type="text/javascript" src="scripts.min.js">
+<script async type="text/javascript" src="scripts.js">
 </script>
 <div id="head" class="block">
 <table><tr><td class="primary"><h1>Advanced Individual Value &amp; Stat Calculator</h1></td>
@@ -140,7 +140,7 @@ The latest version of this program can always be found at https://legendarypkmn.
 	<option value="2">Relatively superior [121-150]</option>
 	<option value="3">Outstanding [151-186]</option>
 </select></td>
-<td colspan="2" style="position: relative;" class="left top"><select name="pot1" id="pot1" size="1" multiple="multiple">
+<td colspan="2" class="relative left top"><select name="pot1" id="pot1" size="1" multiple="multiple">
 	<option value="-1"> </option>
 	<option value="0">HP</option>
 	<option value="1">Attack</option>
@@ -163,7 +163,7 @@ The latest version of this program can always be found at https://legendarypkmn.
 <tr class="ext"><td></td><td></td><td></td><td><h3>HP</h3></td><td><h3>Atk</h3></td><td><h3>Def</h3></td><td><h3>Sp.A</h3></td><td><h3>Sp.D</h3></td><td><h3>Spd</h3></td><td><h3 class="center">#Dex</h3></td></tr>
 
 <tr class="ext"><td colspan="3"><h4>Nature Effects:</h4></td><td></td><td class="right" id="nate-1">-</td><td class="right" id="nate-2">-</td><td class="right" id="nate-3">-</td><td class="right" id="nate-4">-</td><td class="right" id="nate-5">-</td></tr>
-<tr class="ext"><td colspan="3"><h4>Base Stats:</h4></td><td class="right" id="base0"></td><td class="right" id="base1"></td><td class="right" id="base2"></td><td class="right" id="base3"></td><td class="right" id="base4"></td><td class="right" id="base5"></td><td><input style="text-align: right;"  type="text" id="number" name="number" maxlength="3" size="3" value="0" /></td></tr>
+<tr class="ext"><td colspan="3"><h4>Base Stats:</h4></td><td class="right" id="base0"></td><td class="right" id="base1"></td><td class="right" id="base2"></td><td class="right" id="base3"></td><td class="right" id="base4"></td><td class="right" id="base5"></td><td><input class="align-right" type="text" id="number" name="number" maxlength="3" size="3" value="0" /></td></tr>
 <tr class="eps ext"><td colspan="3"><h4>Effort Points:</h4></td><td class="right" id="eff0"></td><td class="right" id="eff1"></td><td class="right" id="eff2"></td><td class="right" id="eff3"></td><td class="right" id="eff4"></td><td class="right" id="eff5"></td><td></td></tr>
 <tr id="ept" class="eps ext">
 <td colspan="2"><h4>Pokérus:</h4></td><td><input name="pkrs" id="pkrs" type="checkbox"/></td>
@@ -206,7 +206,7 @@ The latest version of this program can always be found at https://legendarypkmn.
 <td><input type="text" name="stat3-0" id="stat3-0" maxlength="3" size="3" value="" /></td>
 <td><input type="text" name="stat4-0" id="stat4-0" maxlength="3" size="3" value="" /></td>
 <td><input type="text" name="stat5-0" id="stat5-0" maxlength="3" size="3" value="" /></td>
-<td><input style="text-align: right;" disabled="disabled" type="text" id="number-0" name="number-0" maxlength="3" size="3" value="0" /><input type="hidden" id="nat-0" name="nat-0" value="" /><input type="hidden" id="char-0" name="char-0" value="" /><input type="hidden" id="hpt-0" name="hpt-0" value="" /><input type="hidden" id="pot0-0" name="pot0-0" value="" /><input type="hidden" id="pot1-0" name="pot1-0" value="" /><input type="hidden" id="pot2-0" name="pot2-0" value="" /></td>
+<td><input class="align-right" disabled="disabled" type="text" id="number-0" name="number-0" maxlength="3" size="3" value="0" /><input type="hidden" id="nat-0" name="nat-0" value="" /><input type="hidden" id="char-0" name="char-0" value="" /><input type="hidden" id="hpt-0" name="hpt-0" value="" /><input type="hidden" id="pot0-0" name="pot0-0" value="" /><input type="hidden" id="pot1-0" name="pot1-0" value="" /><input type="hidden" id="pot2-0" name="pot2-0" value="" /></td>
 </tr>
 <tr id="eprow-0" class="eps"><td></td><td id="eps-0"></td><td><h4>EVs:</h4></td>
 <td><input type="text" name="ep0-0" id="ep0-0" maxlength="3" size="3" value="0" /></td>
@@ -274,7 +274,7 @@ The latest version of this program can always be found at https://legendarypkmn.
 </table>
 </td></tr>
 
-<tr><td class="primary" style="vertical-align: middle;">
+<tr><td class="primary" class="align-middle">
 <table>
 <tr><td id="status" colspan="3">Self Destruct Immediate!<br/>Enable JavaScript or report this error if it persists.</td></tr>
 </table>

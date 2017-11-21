@@ -188,6 +188,15 @@ body {
 	vertical-align: top !important;
 	padding-right: 6px !important;
 }
+#calculator .aligh-right {
+	text-align: right !important;
+}
+#calculator .align-middle {
+	vertical-align: middle;
+}
+#calculator .relative {
+	position: relative;
+}
 #calculator #tooltip {
 	background: #eee;
 	border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -webkit-background-clip: padding-box !important;
