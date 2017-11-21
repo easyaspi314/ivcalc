@@ -278,3 +278,9 @@ body {
 #calculator #controls, #documentation, #btn-addeps, #times, #name, #charn { display: none; }
 #calculator h2 { border-bottom: 1px solid #000 !important; }
 }
+table {
+display:table;
+}
+tr {
+display: table-row;
+}
