@@ -54,8 +54,7 @@ function cookie_read(name) {
 	return null;
 }
 function toggle(el) {
-	if ( el.style.display != 'none' ) { el.style.display = 'none'; }
-	else { el.style.display = ''; }
+	el.classList.toggle('hidden');
 }
 function autocomplete(field,select,property,forcematch) { // <input/> -> <select>
 	var f = false;

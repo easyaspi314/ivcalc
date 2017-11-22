@@ -131,13 +131,16 @@ body {
 	border-style: dotted !important;
 }
 #calculator .loading {
-	background: url('data:image/png;base64,R0lGODlhDwAPAIABAP///////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQJGQABACwAAAAADwAPAAACGoyPqQGLzQx00c0q6aU47c+F4vaImheS5lEAACH5BAkZAAEALAAAAAAPAA8AAAIZjI+pAYv9nIwOzjutAbxrDFLLF24JeZZLAQAh+QQJGQABACwAAAAADwAPAAACGIyPqQGL/ZyMDs47rdGs4i1pYnhBZvlJBQAh+QQFGQABACwAAAAADwAPAAACGYyPqQGL/ZyMDs47gd7WdAxSyxd6CXmWSwEAOw==') 50% 100% no-repeat;
+	background: url('loading.gif') 50% 100% no-repeat;
 	display: inline-block;
 	padding: 0 0 25px 0;
 }
 #calculator .button {
-	background: #ced2d0 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAAGUlEQVQY02P8////GUYg8YxkogFOMBBLAACNTUydrXmzbAAAAABJRU5ErkJggg==') 50% 50% repeat-x;
-	border: 2px solid;
+	background: -webkit-gradient(linear, 0 0, 0 95.125, color-stop(0.042, #f5f6f5), color-stop(0.505, #f9f9f9), color-stop(0.61, #e4e6e5), color-stop(0.61, #ced2d0));
+	background: -webkit-linear-gradient(#f5f6f5 4.2%, #f9f9f9 50.5%, #e4e6e5 61%, #ced2d0 61%);
+	background: -moz-linear-gradient(#f5f6f5 4.2%, #f9f9f9 50.5%, #e4e6e5 61%, #ced2d0 61%);
+	background: -o-linear-gradient(#f5f6f5 4.2%, #f9f9f9 50.5%, #e4e6e5 61%, #ced2d0 61%);
+	background: linear-gradient(#f5f6f5 4.2%, #f9f9f9 50.5%, #e4e6e5 61%, #ced2d0 61%)	border: 2px solid;
 	color: #606762;
 	font-size: 10px;
 	font-weight: bold;
@@ -274,22 +277,7 @@ body {
 /* Simplex Theme */
 .simplex .ext { display: none; }
 /* td { outline: 1px dotted red !important; }  *//* DEBUG */
-@media print {
-#calculator * {
-	background: #fff;
-	border: none !important;
-	box-shadow: 0px 0px 0px #ffffff !important; -moz-box-shadow: 0px 0px 0px #ffffff !important; -webkit-box-shadow: 0px 0px 0px #ffffff !important;
-	color: #000 !important;
-	text-shadow: none !important;
-	}
-#calculator #head {
-	border-bottom: 3px solid #000 !important;
-	padding-bottom: 1em;
-}
-#calculator .block { width: 100%; }
-#calculator #controls, #documentation, #btn-addeps, #times, #name, #charn { display: none; }
-#calculator h2 { border-bottom: 1px solid #000 !important; }
-}
+
 table {
 display:table;
 }
